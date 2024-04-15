@@ -79,7 +79,7 @@ services:
       - '--certificatesresolvers.le.acme.email=example@example.com'
     ports:
       - '443:443'
-      - '80:80'
+      - '10000:80'
     volumes:
       - './letsencrypt:/letsencrypt'
       - '/var/run/docker.sock:/var/run/docker.sock:ro'
